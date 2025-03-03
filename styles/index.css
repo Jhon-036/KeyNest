@@ -100,6 +100,7 @@ html {
     font-family: "Roboto", serif;
 }
 
+
 @keyframes navBarAnimation {
     0% {
         left: -45rem;
@@ -144,10 +145,14 @@ html {
     border: none;
     font-size: 18px;
     font-weight: bold;
-    color: white;
     background-color: var(--verde);
     border-radius: 10px;
     line-height: 3rem;
+}
+
+.inicio-register button a {
+    text-decoration: none;
+    color: white;
 }
 
 .inicio-register span {

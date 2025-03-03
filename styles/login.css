@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", serif;
+}
+
+:root {
+    --verde : #4fb28f;
+    --tittle : #191a1c;
+    --text : #5a5452;
+}
+
+.container { 
+    max-width: 400PX;
+    padding: 0 25PX;
+}
+
+/* NAV */
+
+.nav {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav img {
+    width: 130px;
+}
+
+/* SECCTION */
+
+.section {
+    height: 100ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-div {
+    width: 100%;
+    background-color: #f5f4f1;
+    padding: 1.5rem;
+    border-radius: 10px ;
+    display: grid;
+    gap: 2rem;
+}
+
+.section-div h2 {
+    padding: 1rem 0;
+    border-bottom: 1px rgba(105, 105, 105, 0.555) solid;
+}
+
+.section-form h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--tittle);
+}
+ 
+.form-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box2 label{
+    font-size: 18px;
+    color: var(--text);
+    padding-bottom: 1rem;
+}
+
+.form-box2 input {
+    font-size: 16px;
+    color: var(--tittle);
+    padding: .8rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: #5a5452ad 1px solid;
+}
+
+.form-box2 button {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--verde);
+    border-radius: 10px;
+    line-height: 3rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+.form-box2 input:focus {
+    outline: none;
+}
+
+.loginForm p {
+    padding: 10px 0;
+    color: var(--text);
+}
+
+.loginForm a {
+    color: var(--verde);
+    padding: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(48, 49, 51);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    display: grid;
+    gap: 3rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.redes h2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.redes-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.redes-container i {
+    font-size: 24px;
+    padding: 4px;
+}
+
+.redes-box {
+    background-color: #ffffff18;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

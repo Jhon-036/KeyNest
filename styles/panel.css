@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", serif;
+}
+
+:root {
+    --verde : #4fb28f;
+    --tittle : #191a1c;
+    --text : #5a5452;
+}
+
+.container { 
+    max-width: 400PX;
+    padding: 0 25PX;
+}
