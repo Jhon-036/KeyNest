@@ -21,11 +21,18 @@ html {
 
 /* NAV */
 
+header {
+    position: fixed;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.322);
+    background-color: white;
+}
+
 .nav {
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .nav img {
@@ -35,7 +42,7 @@ html {
 /* SECCTION */
 
 .section {
-    height: 100ch;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,12 +62,6 @@ html {
     padding: 1rem 0;
     border-bottom: 1px rgba(105, 105, 105, 0.555) solid;
 }
-
-.section-form h2 {
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--tittle);
-}
  
 .form-box2 {
     display: flex;
@@ -69,13 +70,13 @@ html {
 }
 
 .form-box2 label{
-    font-size: 18px;
+    font-size: 1.2rem;
     color: var(--text);
     padding-bottom: 1rem;
 }
 
 .form-box2 input {
-    font-size: 16px;
+    font-size: 1.1rem;
     color: var(--tittle);
     padding: .8rem;
     margin-bottom: 1rem;
@@ -85,7 +86,7 @@ html {
 
 .form-box2 button {
     border: none;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
     background-color: var(--verde);
     border-radius: 10px;
@@ -126,7 +127,7 @@ footer {
 }
 
 .redes h2 {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 15px;
 }
@@ -139,7 +140,7 @@ footer {
 }
 
 .redes-container i {
-    font-size: 24px;
+    font-size: 1.8rem;
     padding: 4px;
 }
 
@@ -151,4 +152,28 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    .container { 
+        min-width: 400PX;
+        padding: 0 55PX;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container { 
+        min-width: 400PX;
+        padding: 0 75PX;
+    }
+}
+
+@media (min-width: 1150px) {
+
+    .container {
+        max-width: 1150px;
+        margin: auto;
+    }
 }
