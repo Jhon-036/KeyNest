@@ -400,7 +400,7 @@ footer {
 
     .navBar-items ul a{
         color: var(--verde);
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: 1rem;
     }
 
@@ -440,6 +440,14 @@ footer {
 
     .inicio h2, .ability h2 {
         padding: 3rem 0 1rem;
+    }
+
+    .ability h2 {
+        font-size: 2.5rem;
+    }
+
+    .ability-box h3 {
+        font-size: 1.5rem;
     }
 
     .news-box,.news-box-2 {
