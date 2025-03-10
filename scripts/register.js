@@ -1,30 +1,22 @@
-const registerForm = document.getElementById('registerForm')
+const autenticador = new Autenticador();
 
-registerForm.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const name = document.getElementById('name').value
-    const lastName = document.getElementById('lastName').value
-    const userName = document.getElementById('userName').value
-    const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
+document.getElementById("registerForm").addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    const Users = JSON.parse(localStorage.getItem('users')) || []
-    const isUserEmailRegister = Users.find(user => user.email === email)
-    if (isUserEmailRegister) {
-        return alert('El correo ya está registrado!')
-    } 
+    const name = document.getElementById("name").value;
+    const lastName = document.getElementById("lastName").value;
+    const userName = document.getElementById("userName").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    Users.push({
-        name:name,
-        lastName:lastName,
-        userName:userName,
-        email:email,
-        password:password
-    })
+    // Registrar el usuario
+    const resultado = autenticador.registrar(name, lastName, userName, email, password);
 
-    localStorage.setItem('users',JSON.stringify(Users))
-    alert('Registro exitoso')
+    // Mostrar mensaje con alert
+    alert(resultado.message);
 
-    //REDIRECCION AL LOBBY
-    window.location.href = '/pages/login.html'
-})
+    // Redirigir al login si el registro fue exitoso
+    if (resultado.success) {
+        window.location.href = '/pages/login.html';
+    }
+});

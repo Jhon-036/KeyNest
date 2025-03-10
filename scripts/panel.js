@@ -1,11 +1,12 @@
-const user = JSON.parse(localStorage.getItem('login_succes')) || false
-if (!user) {
-    window.location.href = '/pages/login.html'
+const autenticador = new Autenticador();
+
+if(!autenticador.estaAutenticado()) {
+    window.location.href = "/pages/login.html";
+} else {
+    const usuarioActual = autenticador.obtenerUsuarioActual();
 }
 
-const logOut = document.getElementById('logOut')
-logOut.addEventListener('click', () => {
-    alert('Hasta pronto!')
-    localStorage.removeItem('logini_succes')
+document.getElementById("logOut").addEventListener("click", () => {
+    autenticador.logout();
     window.location.href = '/pages/login.html'
 })
