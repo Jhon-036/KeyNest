@@ -15,7 +15,7 @@
 <body>
     <header class="header container">
         <div class="header-container">
-            <a href="#inicio"><img src="assets/keynest-logo.gif" alt="keynest"></a>
+            <a href="/index.html"><img src="assets/keynest-logo.gif" alt="keynest"></a>
             <i class="fa-solid fa-bars" id="bar"></i>
         </div>
         <nav id="navBar" class="navBar">
@@ -28,7 +28,7 @@
                         <a href="#home"><li>Inicio</li></a>
                         <a href="#ability"><li>Ventajas</li></a>
                         <a href="#news"><li>Noticias</li></a>
-                        <button>Iniciar Sesion</button>
+                        <a href="/pages/login.html" class="button-navBar">Iniciar Sesion</a>
                     </ul>
                 </div>
             </div>
@@ -36,13 +36,15 @@
     </header>
     <main class="main container">
         <section id="home" class="inicio">
-            <div class="inicio-text">
-                <h2>Gestor de contrasñas seguro e intuitivo</h2>
-                <p>Genera y organiza tus contraseñas y protégelas en un solo lugar, gestor de contraseñas KetNest</p>
-            </div>
-            <div class="inicio-register">
-                <button><a href="/pages/register.html">Comenzar</a></button>
-                <span><i class="fa-solid fa-shield-halved"></i><p>100% Seguro</p></span>
+            <div class="home-container">
+                <div class="inicio-text">
+                    <h2>Gestor de contrasñas seguro e intuitivo</h2>
+                    <p>Genera y organiza tus contraseñas y protégelas en un solo lugar, gestor de contraseñas KetNest</p>
+                </div>
+                <div class="inicio-register">
+                    <a href="/pages/register.html">Comenzar</a>
+                    <span><i class="fa-solid fa-shield-halved"></i><p>100% Seguro</p></span>
+                </div>
             </div>
             <div class="hero-img">
                 <!-- <img src="assets/hero-laptop.webp" alt="keynest-hero"> -->
@@ -76,20 +78,24 @@
         <section id="news" class="news">
             <div class="news-container">
                 <div class="news-box">
-                    <h2>Protege a tu familia y amigos</h2>
-                    <div class="news-box-span">
-                        <span>Obtén acceso gratuito a </span>
-                        <h3>Funciones Premium</h3>
+                    <div class="news-box-text">
+                        <h2>Protege a tu familia y amigos</h2>
+                        <div class="news-box-span">
+                            <span>Obtén acceso gratuito a </span>
+                            <h3>Funciones Premium</h3>
+                        </div>
+                        <p>Comparte KeyNest con tus seres queridos y disfruta de una experiencia online fluida y segura sin costo alguno. Asegura la tranquilidad de todos con la mejor protección disponible.</p>
+                        <a href="/pages/register.html">Obtener</a>
                     </div>
-                    <p>Comparte KeyNest con tus seres queridos y disfruta de una experiencia online fluida y segura sin costo alguno. Asegura la tranquilidad de todos con la mejor protección disponible.</p>
-                    <button>Obtener</button>
                     <div class="news-box-img">
                         <img src="assets/frients-celphone.jpg" alt="">
                     </div>
                 </div>
                 <div class="news-box-2">
-                    <h2>Genera contraseñas completas</h2>
-                    <p>El generador de contraseñas KeyNest crea contraseñas complejas y altamente seguras, lo que te permite ajustar la longitud, el tipo de simbolo y la sensibilidad a mayúsculas y minúsculas.</p>
+                    <div class="news-box2-text">
+                        <h2>Genera contraseñas completas</h2>
+                        <p>El generador de contraseñas KeyNest crea contraseñas complejas y altamente seguras, lo que te permite ajustar la longitud, el tipo de simbolo y la sensibilidad a mayúsculas y minúsculas.</p>
+                    </div>
                     <div class="news-box-img">
                         <img src="assets/complex'passwords.avif" alt="">
                     </div>

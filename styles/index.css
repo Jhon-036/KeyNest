@@ -6,6 +6,7 @@
 
 html {
     font-family: "Roboto", serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -19,11 +20,11 @@ html {
     position: sticky;
     top: 0;
     background-color: white;
-    
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.322);
 }
 
 .container { 
-    max-width: 400PX;
+    min-width: 400PX;
     padding: 0 25PX;
 }
 
@@ -41,7 +42,7 @@ html {
 
 .header-container i {
     color: var(--verde);
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -51,7 +52,7 @@ html {
     background-color: var(--verde);
     position: fixed;
     top: 0;
-    left: -35rem;
+    left: -75rem;
     transition: left 0.5s ease-in-out;
 }
 
@@ -68,7 +69,7 @@ html {
 
 .navBar-container i {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -79,31 +80,30 @@ html {
     gap: 2rem;
 }
 
-.navBar-items ul a{
+.navBar-items ul a {
     text-decoration: none;
     list-style: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .navBar-items ul a li {
     padding: 4px 4px 4px 0;
 }
 
-.navBar-items ul button {
-    font-size: 20px;
-    padding: 15px 58px;
+.navBar-items ul a:nth-child(4) {
+    text-align: center;
+    background-color: white;
     color: var(--verde);
-    font-weight: bold;
+    line-height: 3rem;
     border-radius: 10px;
-    border: none;
-    font-family: "Roboto", serif;
+    font-weight: bold;
 }
 
 
 @keyframes navBarAnimation {
     0% {
-        left: -45rem;
+        left: -75rem;
     }
     100% {
         left: 0;
@@ -122,16 +122,21 @@ html {
     gap: 1rem;
 }
 
-.inicio h2, .ability h2, .testimony h2 {
+.home-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.inicio h2, .ability h2 {
     text-align: center;
     padding: 2rem 0 1rem;
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--tittle);
 }
 
 .inicio p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     color: var(--text);
 }
@@ -141,19 +146,18 @@ html {
     flex-direction: column;
 }
 
-.inicio-register button {
+.inicio-register a {
     border: none;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
     background-color: var(--verde);
     border-radius: 10px;
     line-height: 3rem;
-}
-
-.inicio-register button a {
     text-decoration: none;
     color: white;
+    text-align: center;
 }
+
 
 .inicio-register span {
     padding-top: 1rem;
@@ -166,7 +170,7 @@ html {
 
 .inicio-register span i,
 .inicio-register span p {
-    font-size: 14px;
+    font-size: .9rem;
 }
 
 .hero-img {
@@ -235,34 +239,40 @@ html {
     color: white;
 }
 
-.news-box p{
+.news-box-text {
+    display: grid;
+    gap: .5rem;
+}
+
+.news-box-text p{
     line-height: 24px;
 }
 
-.news-box h2{
+.news-box-text h2{
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
-.news-box button {
-    font-size: 18px;
-    background-color: transparent;
+.news-box-text a {
+    font-size: 1.2rem;
     border: 2px white solid;
     color: white;
     line-height: 2.5rem;
+    text-decoration: none;
     font-weight: bold;
     margin: 1rem 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .news-box-span span {
     color: #dbf153;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .news-box-span h3{
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #dbf153;
     font-weight: bold;
 }
@@ -282,13 +292,18 @@ html {
     gap: 1.5rem;
 }
 
-.news-box-2 h2{
+.news-box2-text {
+    display: grid;
+    gap: .5rem;
+}
+
+.news-box2-text h2{
     color: var(--tittle);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
-.news-box-2 p {
+.news-box2-text p {
     color: var(--text);
     line-height: 24px;
 }
@@ -311,7 +326,7 @@ footer {
 }
 
 .redes h2 {
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 15px;
 }
@@ -320,11 +335,11 @@ footer {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .redes-container i {
-    font-size: 24px;
+    font-size: 1.8rem;
     padding: 4px;
 }
 
@@ -336,4 +351,116 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (min-width: 768px) {
+
+    .container { 
+        min-width: 400PX;
+        padding: 0 55PX;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container { 
+        min-width: 400PX;
+        padding: 0 75PX;
+    }
+
+    .header-container i {
+        display: none;
+    }
+
+    .navBar {
+        top: 0;
+        left: 0;
+        height: auto;
+    }
+
+    .navBar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navBar-container i {
+        display: none;
+    }
+
+    .navBar {
+        background-color: transparent;
+    }
+
+    .navBar-items ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navBar-items ul a{
+        color: var(--verde);
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .navBar-items ul a:nth-child(4) {
+        background-color: var(--verde);
+        color: white;
+        padding: 0 2rem;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .inicio {
+        padding-top: 3.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .inicio-text h2 {
+        text-align: start;
+        font-size: 3.5rem;
+    }
+
+    .inicio-text p {
+        padding-top: 1.5rem;
+        text-align: start;
+    }
+
+    .inicio-register a {
+        font-size: 1.3rem;
+    }
+
+    .inicio h2, .ability h2 {
+        padding: 3rem 0 1rem;
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .news-box,.news-box-2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .news-box-img {
+        width: 60rem;
+    }
+
+    .news-box h2,.news-box-2 h2 {
+        font-size: 2.5rem;
+    }
+
+    .news-box , .news-box-2 {
+        padding: 1.5rem 1.5rem;
+        color: white;
+    }
 }

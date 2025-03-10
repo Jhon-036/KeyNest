@@ -11,7 +11,7 @@ registerForm.addEventListener('submit', (e) => {
     const Users = JSON.parse(localStorage.getItem('users')) || []
     const isUserEmailRegister = Users.find(user => user.email === email)
     if (isUserEmailRegister) {
-        return alert('El usuario ya esta registrado!')
+        return alert('El correo ya está registrado!')
     } 
 
     Users.push({
